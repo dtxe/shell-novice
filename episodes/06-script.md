@@ -626,6 +626,16 @@ When you run it from the `north-pacific-gyre` directory:
 $ bash do-errors.sh NENE*A.txt NENE*B.txt
 ```
 
+you get an error message that reads `bash: do-errors.sh: No such file or directory`.
+To figure out why, try listing the current directory? Is the `do-errors.sh` file present?
+How can this script be called from the `north-pacific-gyre` directory?
+
+Now try running the script using the correct relative path:
+
+```bash
+$ bash scripts/do-errors.sh NENE*A.txt NENE*B.txt
+```
+
 the output is blank.
 To figure out why, re-run the script using the `-x` option:
 
